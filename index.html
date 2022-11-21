@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <title id="title">Decimal to Binary </title>
+  <meta charset="utf-8"/>
+  <meta name="author" content="SidPro"/>
+  <meta name="description" content="Decimal to binary conversion calculator"/>
+  <meta name="keywords" content="decimaltobinary,binarytodecimal,hexadecimaltodecimal,decimaltohexadecimal,binarytohexadecimal,hexadecimaltobinary"/>
+  <meta name="viewport" content="width=devive-width,initial-scale=1.0"/>
+  <link type="text/css" rel="stylesheet" href="css\converter.css">
+  <link rel="stylesheet" href="css\colorconvert.css">
+  <script src="javascript\convertFun.js" charset="utf-8"></script>
+</head>
+<body id="body1" class="bgcolor1">
+  <div class="flex-container">
+    <div class="grid-container maincontainer bgcolor2">
+  <!-- converter -->
+      <h1 class="h2F item1 textcolor1">Decimal to Binary Convertor</h1>
+
+        <div class="item2 textcolor3" style="margin-top:10px">
+          <label for="select1">From</label><br/>
+          <select class="textcolor2 bgcolor1" id="select1" name="unit1" onchange="convert()">
+              <option value="Binary">Binary</option>
+              <option value="Decimal">Decimal</option>
+              <option value="Hexadecimal">Hexadecimal</option>
+          </select>
+        </div>
+
+        <div class="item3 textcolor3" style="margin-top:10px">
+          <lable for="select2">To</lable><br/>
+          <select class="textcolor2 bgcolor1" id="select2" name="unit2" onchange="convert()">
+              <option value="Binary">Binary</option>
+              <option value="Decimal">Decimal</option>
+              <option value="Hexadecimal">Hexadecimal</option>
+          </select>
+        </div>
+
+      <div class="item4 textcolor1">
+          <lable id="lable1" for="input1">Enter Decimal number:</lable><br/>
+          <input class="bgcolor1 textcolor2" id="input1" type="text" onkeypress="return Onpress(event)" name="binary1"><sub id="sub1">2</sub>
+      </div>
+
+      <button id="btn1" class="button1 textcolor1" type="button" name="convert" onclick="takevalue()">Convert</button>
+    
+
+      <div class="item5 textcolor1">
+        <label id="lable2" for="output1">Results:</label><br>
+        <textarea class="bgcolor1 textcolor2" id="output1" name="outpu1" rows="20" cols="40" readonly></textarea><sub id="sub2">2</sub>
+      </div>
+  
+    
+     
+    </table>
+   
+  
+
+</body>
+</html>
